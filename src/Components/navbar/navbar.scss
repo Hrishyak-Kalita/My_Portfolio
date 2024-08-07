@@ -1,0 +1,26 @@
+.navbar {
+  height: 6rem;
+  backdrop-filter: 20%;
+ background-color: rgb(56, 45, 101);
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    .name {
+      font-weight: bold;
+      color: white;
+    }
+    .social {
+      display: flex;
+      gap: 20px;
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+      // justify-content: space-between;
+    }
+  }
+}

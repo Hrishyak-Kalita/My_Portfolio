@@ -1,7 +1,9 @@
+@import "../../app.scss";
+
 .navbar {
-  height: 6rem;
-  backdrop-filter: 20%;
- background-color: rgb(56, 45, 101);
+  height: 100px;
+
+  // background-color: rgb(56, 45, 101);
   .wrapper {
     max-width: 1366px;
     margin: auto;
@@ -9,16 +11,24 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    .name {
+
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
+    }
+    span {
       font-weight: bold;
       color: white;
+      @include mobile {
+        display: none;
+      }
     }
     .social {
       display: flex;
       gap: 20px;
       img {
-        width: 2rem;
-        height: 2rem;
+        width: 18px;
+        height: 18px;
       }
       // justify-content: space-between;
     }

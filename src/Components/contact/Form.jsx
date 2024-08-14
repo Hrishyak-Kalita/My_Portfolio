@@ -79,7 +79,7 @@ export default function Form() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "582bbdc9-dd81-4691-b59e-89ed8c8c3310");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",

@@ -22,13 +22,12 @@
     flex-direction: column;
     gap: 40px;
     padding: 0 0 0 6%;
-    
+
     @include mobile {
-      align-items:left;
+      align-items: left;
       justify-content: center;
       padding: 2% 0 10px 1%;
       gap: 15px;
-      
     }
     h1 {
       line-height: 80px;
@@ -39,19 +38,16 @@
         // text-align: center;
       }
     }
-   h2{
-    @include mobile {
-      font-size: 18px;
-   
-     }
-   }
+    h2 {
+      @include mobile {
+        font-size: 18px;
+      }
+    }
     span {
       font-weight: 300;
       @include mobile {
-      font-size: 12px;
-     
-       }
-      
+        font-size: 12px;
+      }
     }
   }
 
@@ -63,6 +59,8 @@
 
     .phoneSvg {
       position: absolute;
+      left: 20%;
+      top: 5%;
       background-color: transparent;
       //   stroke:orange;
 
@@ -70,6 +68,11 @@
       //     height: 20%;
       //     width: 70%;
       margin: auto;
+
+      @include mobile {
+        left: 20%;
+        top: 5%;
+      }
       svg {
         stroke: #afafc1;
         fill: rgba(4, 7, 101, 0.282);
@@ -78,42 +81,43 @@
         object-fit: cover;
       }
     }
+  }
+}
+.formBox {
+  position: relative;
+  form {
+    // display: grid;
+    // grid-template-columns: 25% 25% 25% 25%;
 
-    form {
-      // display: grid;
-      // grid-template-columns: 25% 25% 25% 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    
-        @include mobile {
-         padding: 0px;
-         height: 85%;
-        }
-          
-      
+    @include mobile {
+      padding: 0px;
+      height: 85%;
+    }
 
-      input,
-      textarea,
-      button {
-        padding: 15px;
-        background-color: transparent;
-        border: 1px solid white;
-        color: wheat;
-        border-radius: 5px;
-        width: 50vw;
-      }
+    input,
+    textarea,
+    button {
+      padding: 15px;
+      background-color: transparent;
+      border: 1px solid white;
+      color: wheat;
+      border-radius: 5px;
+      width: 50vw;
+      color: red;
+    }
 
-      button {
-        background-color: orange;
-        // width: 15rem;
-        border: none;
-        // align-self: center;
-        cursor: pointer;
-        font-weight: 900;
-        color: black;
-      }
+    button {
+      background-color: orange;
+      // width: 15rem;
+      border: none;
+      // align-self: center;
+      cursor: pointer;
+      font-weight: 900;
+      color: black;
     }
   }
 }

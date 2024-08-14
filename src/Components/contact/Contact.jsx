@@ -98,20 +98,13 @@ const Contact = () => {
           </svg>
         </motion.div>
 
-        <motion.form
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 3, duration: 1 }}
-        
         >
-          {/* <input className="info" type="text" placeholder="Name" required />
-          <input className="info" type="email" placeholder="Email" required />
-          <textarea className="info" rows={8} placeholder="Message" required />
-          <button className="info">Submit</button>  */}
-          
-        
-        <Form/>
-        </motion.form>
+          <Form />
+        </motion.div>
       </div>
     </motion.div>
   );

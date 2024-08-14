@@ -6,12 +6,12 @@ import Services from "./Components/services/Services";
 import Portfolio from "./Components/portfolio/Portfolio";
 import Contact from "./Components/contact/Contact";
 import Cursor from "./Components/cursor/Cursor";
-
+import Form from "./Components/contact/Form"
 const App = () => {
   return (
     <div>
-      <Cursor/>
-      <section id="Homepage">
+      {/* <Cursor/> */} 
+       <section id="Homepage">
         <Navbar />
         <Hero />
       </section>
@@ -27,6 +27,7 @@ const App = () => {
       <Portfolio />
       <section id="contact">
         <Contact />
+        {/* <Form/> */}
       </section>
     </div>
   );

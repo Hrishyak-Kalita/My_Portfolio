@@ -1,6 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
-
+import Contact from "../contact/Contact";
 const textVariants = {
   initial: {
     x: -500,
@@ -31,7 +31,7 @@ const sliderVariants = {
   },
   animate: {
     x: "-220%",
-    
+
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
@@ -50,13 +50,18 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
+          <motion.h3 variants={textVariants}> Hello! I am</motion.h3>
           <motion.h2 variants={textVariants}>HRISHYAK KALITA</motion.h2>
-          <motion.h1 variants={textVariants}>Frontend Developer</motion.h1>
+          <motion.h1 variants={textVariants}>
+            Frontend Developer | Programmer
+          </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
               See the latest works
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants}>
+              <a href="#contact">Contact Me</a>
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -66,20 +71,20 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-      <motion.div
+      {/* <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
-        {/* <motion.h2
+         <motion.h2
           variants={sliderVariants}
           initial="initial"
           animate="animate"
-        > */}
-          Writer Content Creator Influencer
-        {/* </motion.h2> */}
-      </motion.div>
+        > 
+        Programmer developer
+        {/* </motion.h2> 
+      </motion.div> */}
       <div className="imageContainer">
         <img src="/hero.png" alt="" />
       </div>

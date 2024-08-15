@@ -1,30 +1,30 @@
 import "./app.scss";
-import Navbar from "./Components/navbar/Navbar";
-import Hero from "./Components/hero/Hero";
-import Parallax from "./Components/parallax/Parallax";
-import Services from "./Components/services/Services";
-import Portfolio from "./Components/portfolio/Portfolio";
 import Contact from "./Components/contact/Contact";
-import Cursor from "./Components/cursor/Cursor";
-import Form from "./Components/contact/Form"
+import Hero from "./Components/hero/Hero";
+import Navbar from "./Components/navbar/Navbar";
+import Parallax from "./Components/parallax/Parallax";
+import Portfolio from "./Components/portfolio/Portfolio";
+import Services from "./Components/services/Services";
+import About from "./Components/aboutDetail/About";
 const App = () => {
   return (
     <div>
-      {/* <Cursor/> */} 
-       <section id="Homepage">
+      {/* <Cursor/> */}
+      <section >
         <Navbar />
         <Hero />
       </section>
-      <section id="services">
-        <Parallax type="services" />
+      <section id="about">
+        <Parallax />
       </section>
-      <section>
+      <section id="skill">
+        <About />
+      </section>
+      {/* <section>
         <Services />
-      </section>
-      <section id="portfolio">
-        <Parallax type="portfolio" />
-      </section>
-      <Portfolio />
+      </section> */}
+
+      <Portfolio id="project" />
       <section id="contact">
         <Contact />
         {/* <Form/> */}

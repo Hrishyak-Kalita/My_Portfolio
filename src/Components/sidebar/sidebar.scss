@@ -7,7 +7,6 @@
   justify-content: center;
   background-color: white;
   color: black;
- 
 
   .bg {
     z-index: 999;
@@ -15,14 +14,14 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 400px;
+    width: 200px;
     background-color: rgb(242, 235, 235);
-
+    height: 350px;
 
     @include mobile {
-       width: 200px;
+      width: 200px;
       height: 360px;
-      }
+    }
 
     .links {
       position: absolute;
@@ -34,9 +33,11 @@
       justify-content: center;
       gap: 20px;
       a {
-        font-size: 40px;
+        font-size: 30px;
+        font-family: monospace;
+
         @include mobile {
-            font-size: 20px;
+          font-size: 20px;
         }
       }
     }
@@ -55,10 +56,9 @@
     cursor: pointer;
     @include mobile {
       width: 40px;
-     height: 40px;
-     top: 29px;
-     left: 26px;
-     
-     }
+      height: 40px;
+      top: 29px;
+      left: 26px;
+    }
   }
 }

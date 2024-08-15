@@ -15,15 +15,15 @@ const Navbar = () => {
           Hrishyak Kalita
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="facebook.png" alt="" />
+          <a href="https://www.linkedin.com/in/hrishyak-kalita-63a121227/}">
+            <img src="linkedin.png" alt="" />
           </a>
-          <a href="#">
-            <img src="instagram.png" alt="" />
+          <a href="https://github.com/Hrishyak-Kalita">
+            <img src="github.png" alt="" />
           </a>
-          <a href="#">
-            <img src="youtube.png" alt="" />
-          </a>
+          {/*  <a href="">
+            <img src="mail.png" alt="" />
+          </a> */}
         </div>
       </div>
     </div>

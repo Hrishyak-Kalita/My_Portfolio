@@ -9,7 +9,7 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: orange;
+    color: rgb(214, 212, 189);
     font-size: 36px;
     h1 {
       font-family: fantasy;
@@ -105,12 +105,13 @@
           }
         }
         button {
-          background-color: rgb(224, 204, 168);
+          background-color: rgb(161, 181, 198);
           border: none;
           border-radius: 10px;
           width: 100px;
           padding: 10px;
           cursor: pointer;
+         a{ font-family: fantasy;}
         }
       }
     }

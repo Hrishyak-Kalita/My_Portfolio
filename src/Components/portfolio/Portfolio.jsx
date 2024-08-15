@@ -6,8 +6,8 @@ const items = [
     id: 1,
     title: "Psychology website",
     img: "nurture.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quo omnis molestias ad, delectus et nemo distinctio repudiandae. Saepe, voluptatum.",
-    link: "",
+    desc: "I am currently working on a project  named Nurture Mental Health, a website dedicated to helping users find the right psychological therapy for their needs. In a team of four, I have facilitated collaboration to ensure successful project outcomes. My contributions include designing and implementing interactive website elements such as the footer, navbar, carousel, and services page. Additionally, I have configured the deployment environment to ensure smooth operation of the application in a production environment. The project leverages technologies like ReactJs, npm, Vite, Scss, NodeJs, Git, and Cloudinary.",
+    link: "nurturementalhealth.org",
   },
 
   {
@@ -42,7 +42,6 @@ const Single = ({ item }) => {
   });
   const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
 
-
   return (
     <section>
       <div className="container">
@@ -53,11 +52,10 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            
-              <button>
-                <a href={item.link}>See Demo</a>
-              </button>
-            
+
+            <button>
+              <a href={item.link}>Live project</a>
+            </button>
           </motion.div>
         </div>
       </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Hrishyak Kalita
+          {/* Hrishyak Kalita */}
         </motion.span>
         <div className="social">
           <a href="https://www.linkedin.com/in/hrishyak-kalita-63a121227/}">

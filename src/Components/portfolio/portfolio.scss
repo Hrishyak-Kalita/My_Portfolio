@@ -51,11 +51,13 @@
         flex: 1;
         height: 50%;
         width: 70%;
-        margin-left: 10px;
+        
+        padding-left: 10px;
         @include mobile {
           max-height: 300px;
           margin: 0;
-
+          align-self: flex-end;
+          padding-right: 20px;
           // object-fit: contain;
         }
 
@@ -69,9 +71,9 @@
 
           object-fit: contain;
 
-          @include mobile {
-            object-fit: contain;
-          }
+          // @include mobile {
+          //   object-fit: contain;
+          // }
         }
       }
       .textContainer {
@@ -79,13 +81,15 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-
+        padding-right: 1%;
+        margin-top: 7%;
         @include mobile {
           // transform: none !important;
           padding: 10px;
           align-items: center;
           text-align: center;
           width: 99%;
+          margin-top: 0;
         }
 
         h2 {

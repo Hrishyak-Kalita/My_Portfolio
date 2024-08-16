@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       {/* <Cursor/> */}
-      <section >
+      <section id="home">
         <Navbar />
         <Hero />
       </section>
@@ -20,9 +20,9 @@ const App = () => {
       <section id="skill">
         <About />
       </section>
-      {/* <section>
+      <section id="services">
         <Services />
-      </section> */}
+      </section>
 
       <Portfolio id="project" />
       <section id="contact">

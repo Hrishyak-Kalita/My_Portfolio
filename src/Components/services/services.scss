@@ -7,12 +7,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   .textContainer {
     flex: 1;
     align-self: flex-end;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     // width: 700px;
 
@@ -24,12 +26,13 @@
     p {
       font-weight: 200;
       font-size: 15px;
-      color: gray;
+      font-family: monospace;
+      color: rgb(183, 174, 174);
       text-align: right;
     }
     hr {
-      background-color: rgb(77, 72, 72);
-      height: 1px;
+      background-color: rgb(183, 174, 174);
+      height: 1.5px;
       width: 400px;
       border: none;
       border-top: 0.5 solid gsy;
@@ -63,11 +66,11 @@
         text-align: center;
         gap: 20px;
       }
-      img {
-        width: 300px;
-        height: 100px;
+      .imgproject {
+        width: fit-content;
+        height: fit-content;
         border-radius: 50px;
-        object-fit: cover;
+        object-fit: contain;
 
         @include mobile {
           width: 200px;
@@ -76,9 +79,10 @@
       }
       h1 {
         font-size: 50px;
-
+        font-family: fantasy;
+        letter-spacing: 2px;
         font-weight: 100;
-
+        
         @include mobile {
           font-size: 30px;
         }
@@ -87,16 +91,19 @@
         width: 250px;
         height: 80px;
         border-radius: 50px;
-        background-color: orange;
+        background-color: rgb(228, 221, 207);
         border: none;
         font-size: 24px;
-        cursor: pointer;
         @include mobile {
           font-size: 16px;
           font-weight: 600;
           height: 50px;
           width: 150px;
         }
+      }
+
+      .scrollimg {
+        width: 50px;
       }
     }
   }
@@ -147,6 +154,51 @@
           padding: 5px;
         }
       }
+    }
+  }
+
+  .stars {
+    background-image: url("/stars.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+
+    @include mobile {
+      background-size: contain;
+      // background-repeat: no-repeat;
+    }
+  }
+  .mountains {
+    background-image: url("/mountains.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+
+    @include mobile {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .planets {
+    background-image: url("/planets.png");
+    background-size: cover;
+    background-position: bottom;
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+
+    @include mobile {
+      // background-size: contain;
+      // background-repeat: initial ;
     }
   }
 }

@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    gap: 25px;
+    gap: 0px;
     height: 93vh;
   }
 
@@ -21,13 +21,13 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0 0 0 6%;
+    padding: 20px 0 0 6%;
 
     @include mobile {
       align-items: left;
       justify-content: center;
-      padding: 2% 0 10px 1%;
-      gap: 15px;
+      padding: 50px 0 0px 0px;
+      gap: 12px;
     }
     h1 {
       line-height: 80px;
@@ -108,6 +108,10 @@
       border-radius: 5px;
       width: 50vw;
       color: red;
+      @include mobile {
+        width: 80vw;
+        padding: 10px;
+      }
     }
 
     button {

@@ -23,7 +23,8 @@ const Parallax = (type) => {
           <img src="edu.png" alt="" />
           <h2>Education</h2>
           <span>UnderGrad B.Tech</span>
-          <span>CSE 2021-205 Batch</span>
+          <span>CSE  NIT Silchar</span>
+          <span>2021-205 Batch</span>
         </div>
         <div className="exp">
           <img src="skills.png" alt="" />

@@ -57,7 +57,13 @@ const Hero = () => {
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
-              See the latest works
+              <motion.a
+                href="#services"
+               
+                whileHover={{ scale: 1.1 }}
+              >
+                See the latest works
+              </motion.a>
             </motion.button>
             <motion.button variants={textVariants}>
               <a href="#contact">Contact Me</a>

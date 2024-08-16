@@ -24,11 +24,12 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
+const Links = ({setOpen}) => {
   const items = [
+    ["#home","Home"],
     ["#about", "About"],
     ["#skill", "Skill"],
-    [("#project", "Projects")],
+    ["#services", "Project"],
     ["#contact", "Contact"],
   ];
 
@@ -40,6 +41,7 @@ const Links = () => {
           key={id}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
+          onClick={() => setOpen((prev) => !prev)}
         >
           {label}
         </motion.a>

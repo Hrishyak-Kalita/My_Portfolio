@@ -31,19 +31,19 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let's Work Together</motion.h1>
+        <motion.h1 variants={variants}>Drop your Message</motion.h1>
         <motion.div variants={variants} className="item">
           <h2>Mail</h2>
-          <span>hello@reactjs</span>
+          <span>hrishyakkabde17@gmail.com</span>
         </motion.div>
         <motion.div variants={variants} className="item">
           <h2>Address</h2>
-          <span>Melbourne, Australia</span>
+          <span>Nalbari, Assam</span>
         </motion.div>
-        <motion.div variants={variants} className="item">
+        {/* <motion.div variants={variants} className="item">
           <h2>Phone</h2>
           <span>+11 234 671</span>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
       <div className="formContainer">
         <motion.div

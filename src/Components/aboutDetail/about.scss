@@ -75,7 +75,7 @@
             font-size: 16px;
             font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
               sans-serif;
-            font-weight: 550;
+            font-weight: 600;
             width: 100%;
           }
           span {
@@ -91,13 +91,13 @@
     //         padding: 10px ;
     //       }
     // }
-    .dev {
-      @include mobile {
-        width: 100%;
-        height: 48%;
-        padding: 10px;
-      }
-    }
+    // .dev {
+    //   @include mobile {
+    //     width: 100%;
+    //     height: 48%;
+    //     padding: 10px;
+    //   }
+    // }
   }
 
   h1 {

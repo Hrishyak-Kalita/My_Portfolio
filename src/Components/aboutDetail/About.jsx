@@ -23,24 +23,19 @@ const About = () => {
           <div className="items">
           <ul>
             <li>C++/C</li>
-            <span>Experienced</span>
           </ul>
 
           <ul>
             <li>Javascript</li>
-            <span>Basic</span>
           </ul>
           <ul>
             <li>React</li>
-            <span>Basic</span>
           </ul>
           <ul>
             <li>CSS/SCSS</li>
-            <span>Experienced</span>
           </ul>
           <ul>
             <li>HTML</li>
-            <span>Experienced</span>
           </ul>
         </div>
         </div>
